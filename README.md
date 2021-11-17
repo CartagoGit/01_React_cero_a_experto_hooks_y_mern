@@ -1,7 +1,7 @@
 
 # Curso React: De cero a experto (Hooks y MERN) por Fernando Herrera en Udemy
 
-[ttps://www.udemy.com/course/react-cero-experto]
+[https://www.udemy.com/course/react-cero-experto]
 
 ## Instalaciones recomendadas - Curso de React
 
