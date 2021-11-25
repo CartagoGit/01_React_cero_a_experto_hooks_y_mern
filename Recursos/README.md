@@ -13,3 +13,12 @@
 [https://enzymejs.github.io/enzyme/]
 [https://www.npmjs.com/package/enzyme-to-json]
 [https://github.com/wojtekmaj/enzyme-adapter-react-17]
+
+## Seccion 06: Recursos adicionales de interes sobre estructura de archivos en React
+
+[https://es.reactjs.org/docs/faq-structure.html]
+[https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76]
+
+### Recurso de animacion de css
+
+[https://animate.style/]
