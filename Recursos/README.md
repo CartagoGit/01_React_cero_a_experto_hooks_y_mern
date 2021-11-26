@@ -22,3 +22,7 @@
 ### Recurso de animacion de css
 
 [https://animate.style/]
+
+## Seccion 07 Material para cargar nuestra applicacion a produccion
+
+[https://www.npmjs.com/package/http-server]
