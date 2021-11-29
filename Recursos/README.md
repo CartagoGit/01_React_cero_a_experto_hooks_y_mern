@@ -26,3 +26,7 @@
 ## Seccion 07 Material para cargar nuestra applicacion a produccion
 
 [https://www.npmjs.com/package/http-server]
+
+## Seccion 08 material para pruebas de gifExpertApp
+
+[https://react-hooks-testing-library.com/]

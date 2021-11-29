@@ -1,6 +1,8 @@
 // import React, { useState, useEffect } from "react";
 import React from "react";
-import { useFetchGif } from "../hooks/useFetchGifs";
+import PropTypes from "prop-types";
+
+import { useFetchGifs } from "../hooks/useFetchGifs";
 // import { getGifs } from "../helpers/getGifs";
 import { GifGridItem } from "./GifGridItem";
 
@@ -13,19 +15,16 @@ export const GifGrid = ({ category }) => {
 	// 	//// eslint-disable-next-line react-hooks/exhaustive-deps
 	// }, [category]);
 
-	const { data: images, loading } = useFetchGif(category);
+	const { data: images, loading } = useFetchGifs(category);
 
 	return (
 		<>
 			<h3>{category}</h3>
-            {loading && <p>Cargando...</p>}
-
-			
+			{loading && <p>Cargando...</p>}
 
 			<div className='cardGrid'>
 				{/* { <h3>{count}</h3> } */}
 				{/* <button onClick={ () => setCount(count+1)}></button> */}
-
 				{images.map((img) => (
 					// <li key={id}> {title}</li>
 					// <GifGridItem key={img.id} img ={img}/>
@@ -34,4 +33,8 @@ export const GifGrid = ({ category }) => {
 			</div>
 		</>
 	);
+};
+
+GifGrid.propTypes = {
+	category: PropTypes.string.isRequired
 };

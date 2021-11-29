@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en GifGrid.js Deberia comparar el snapshoot  1`] = `
+<Fragment>
+  <h3>
+    un string
+  </h3>
+  <p>
+    Cargando...
+  </p>
+  <div
+    className="cardGrid"
+  />
+</Fragment>
+`;
+
+exports[`Pruebas en GifGrid.js Deberia mostrar items cuando se cargan imagenes con el hook useFetchGifs  1`] = `
+<Fragment>
+  <h3>
+    una categoria cualquiera
+  </h3>
+  <div
+    className="cardGrid"
+  >
+    <GifGridItem
+      id="ABC"
+      key="ABC"
+      title="Cualquier titulo"
+      url="https://cualquiercosa.jpg"
+    />
+    <GifGridItem
+      id="CBA"
+      key="CBA"
+      title="Cualquier titulo"
+      url="https://cualquiercosa.jpg"
+    />
+  </div>
+</Fragment>
+`;
