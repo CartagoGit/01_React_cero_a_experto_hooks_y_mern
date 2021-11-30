@@ -33,4 +33,5 @@
 
 ## Seccion 09 material para hooks basicos
 
-[https://getbootstrap.com/]
+[https://getbootstrap.com/] Bootstrap Documentación
+[https://es.reactjs.org/docs/hooks-reference.html#uselayouteffect] useLayoutEffect Documentación
