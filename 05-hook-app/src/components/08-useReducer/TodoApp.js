@@ -1,19 +1,43 @@
-import React, { useReducer } from "react";
-import "./styles.css";
+import React, { useReducer, useEffect } from "react";
+import { TodoAdd } from "./TodoAdd";
+import { TodoList } from "./TodoList";
 import { todoReducer } from "./todoReducer";
+import "./styles.css";
+
+const init = () => {
+	// return [
+	// 	{
+	// 		id: new Date().getTime(),
+	// 		desc: "Aprender React",
+	// 		done: false
+	// 	}
+	// ];
+	return JSON.parse(localStorage.getItem("todos")) || [];
+};
 
 export const TodoApp = () => {
-	const initialState = [
-		{
-			id: new Date().getTime(),
-			desc: "Aprender React",
-			done: false
-		}
-	];
+	const [todos, dispatch] = useReducer(todoReducer, [], init);
 
-	const [todos] = useReducer(todoReducer, initialState);
+	useEffect(() => {
+		localStorage.setItem("todos", JSON.stringify(todos));
+	}, [todos]);
 
-	console.log(todos);
+	const handleDelete = (todoId) => {
+		const action = {
+			type: "delete",
+			payload: todoId
+		};
+
+		dispatch(action);
+	};
+
+	const handleToggle = (todoId) => {
+		dispatch({ type: "toggle", payload: todoId });
+	};
+
+	const handleAddTodo = (newTodo) => {
+		dispatch({ type: "add", payload: newTodo });
+	};
 
 	return (
 		<div>
@@ -22,30 +46,14 @@ export const TodoApp = () => {
 
 			<div className='row'>
 				<div className='col-7'>
-					<ul className='list-group list-group-flush'>
-						{todos.map((todo, i) => (
-							<li key={todo.id} className='list-group-item'>
-								<p className='text-center'>
-									{i + 1}. {todo.desc}
-								</p>
-								<button className='btn btn-danger'>Borrar</button>
-							</li>
-						))}
-					</ul>
+					<TodoList
+						todos={todos}
+						handleDelete={handleDelete}
+						handleToggle={handleToggle}
+					/>
 				</div>
 				<div className='col-5'>
-					<h4 className='text-center'>Agregar TODO</h4>
-					<hr />
-					<form>
-						<input
-							type='text'
-							name='description'
-                            className='form-control'
-							placeholder='Aprender ...'
-							autoComplete='off'
-						/>
-                        <button className='btn btn-outline-primary mt-1 col-12'>Agregar</button>
-					</form>
+					<TodoAdd handleAddTodo={handleAddTodo} />
 				</div>
 			</div>
 		</div>

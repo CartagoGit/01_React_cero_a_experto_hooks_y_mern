@@ -39,3 +39,7 @@
 ## Seccion 10 material para hook useReducer
 
 [https://es.reactjs.org/docs/hooks-reference.html#usereducer] Documentación de React para el useReducer
+[https://www.youtube.com/watch?v=hb8O0qRqiSk&t=2s] Video explicando el LocalStorage
+[https://github.com/Klerith/react-hooks-en-detalle/releases/tag/v0.10.0] Repositorio con codigo de la sección
+
+## Seccion 11 material para el hook useContext
