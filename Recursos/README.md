@@ -35,3 +35,7 @@
 
 [https://getbootstrap.com/] Bootstrap Documentación
 [https://es.reactjs.org/docs/hooks-reference.html#uselayouteffect] useLayoutEffect Documentación
+
+## Seccion 10 material para hook useReducer
+
+[https://es.reactjs.org/docs/hooks-reference.html#usereducer] Documentación de React para el useReducer
