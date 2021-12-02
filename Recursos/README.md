@@ -43,3 +43,5 @@
 [https://github.com/Klerith/react-hooks-en-detalle/releases/tag/v0.10.0] Repositorio con codigo de la sección
 
 ## Seccion 11 material para el hook useContext
+
+[https://v5.reactrouter.com/web/api/NavLink] Documentación de NavLink - React Router
