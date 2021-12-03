@@ -21,10 +21,11 @@ export const useFetch = (url) => {
 			.then((data) => {
 				// aqui validamos el arreglo no este en cero
 				// console.log(url);
-				if (data.length === 0)
-					data.push({
-						quote: "Without Data"
-					});
+				// if (data.length === 0)
+				// 	data.push({
+				// 		quote: "Without Data"
+				// 	});
+				if (data.length === 0) throw new EmptyStackException();
 				if (isMounted.current) {
 					setState({
 						loading: false,
@@ -36,7 +37,7 @@ export const useFetch = (url) => {
 			.catch((error) =>
 				setState({
 					loading: false,
-					error,
+					error: 'Error fetching url',
 					data: null
 				})
 			);
