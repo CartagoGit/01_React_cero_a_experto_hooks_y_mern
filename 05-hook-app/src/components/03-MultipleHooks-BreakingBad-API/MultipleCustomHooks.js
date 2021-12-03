@@ -4,7 +4,7 @@ import { useFetch } from "../../hooks/useFetch";
 import "../02-useEffect/effects.css";
 
 export const MultipleCustomHooks = () => {
-	const { counter, increment, decrement, setCounter } = useCounter(30);
+	const { counter, increment, decrement, setCounter } = useCounter(1);
 	const maxCounter = [30, 102];
 	const minCounter = [1, 63];
 	const { loading, data } = useFetch(

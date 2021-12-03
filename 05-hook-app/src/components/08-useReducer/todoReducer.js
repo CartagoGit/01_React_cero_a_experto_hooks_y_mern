@@ -1,5 +1,5 @@
 export const todoReducer = (state = [], action) => {
-	console.log("entra");
+	// console.log(action);
 	switch (action.type) {
 		case "add":
 			return [...state, action.payload];
@@ -15,7 +15,7 @@ export const todoReducer = (state = [], action) => {
 			// 	} else {
 			// 		return todo;
 			// 	}
-			// });
+			// });		
 			return state.map((todo) =>
 				todo.id === action.payload ? { ...todo, done: !todo.done } : todo
 			);

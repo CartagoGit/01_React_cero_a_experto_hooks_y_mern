@@ -6,7 +6,7 @@ export const TodoAdd = ({ handleAddTodo }) => {
 		description: ""
 	});
 
-	const handleSubmit = (e) =>{
+	const handleSubmit = (e) => {
 		e.preventDefault();
 
 		if (description.trim().length < 1) return;
@@ -17,7 +17,7 @@ export const TodoAdd = ({ handleAddTodo }) => {
 		};
 		handleAddTodo(newTodo);
 		reset();
-	}
+	};
 
 	return (
 		<>
