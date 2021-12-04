@@ -52,3 +52,22 @@ ES7 React/Redux
 Simple React Snippets
 
 Auto Close Tag
+
+## Creación del jsconfig.json para todo el proyecto para tener Intellisense de jest y de javascript e instalacion repositorio para tenerlo tambine de React
+
+npm i @types/react --save-dev
+
+jsconfig.json:
+
+{
+"typeAcquisition": {
+"include": ["jest", "jquery", "**/src/**/*"]
+},
+"compilerOptions": {
+"module": "commonjs",
+"target": "es6"
+},
+"exclude": ["node_modules", "**/node_modules/*"]
+}
+
+## Añadidos Snipets
