@@ -1,11 +1,11 @@
 export const demoTodos = [
 	{
-		id: new Date().getTime()+1,
+		id: 123,
 		desc: "Aprender react",
 		done: false
 	},
 	{
-		id: new Date().getTime()+2,
+		id: 234,
 		desc: "Tocarme las narices",
 		done: false
 	}

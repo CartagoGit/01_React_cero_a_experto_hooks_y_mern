@@ -45,3 +45,7 @@
 ## Seccion 11 material para el hook useContext
 
 [https://v5.reactrouter.com/web/api/NavLink] Documentación de NavLink - React Router
+
+## Seccion 12 material para tests de los hooks
+
+npm i @types/jest  // Para instalar el Intellisense para jest

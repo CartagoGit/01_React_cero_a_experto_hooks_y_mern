@@ -1,6 +1,6 @@
 import React from "react";
-
-export const TodoListitem = ({ todo, index, handleDelete, handleToggle }) => {
+import PropTypes from 'prop-types';
+export const TodoListItem = ({ todo, index, handleDelete, handleToggle }) => {
 	return (
 		<li key={todo.id} className='list-group-item'>
 			<p
@@ -14,4 +14,11 @@ export const TodoListitem = ({ todo, index, handleDelete, handleToggle }) => {
 			</button>
 		</li>
 	);
+};
+
+TodoListItem.propTypes = {
+	todo: PropTypes.object.isRequired,
+	index: PropTypes.number.isRequired,
+	handleDelete: PropTypes.func.isRequired,
+	handleToggle: PropTypes.func.isRequired
 };

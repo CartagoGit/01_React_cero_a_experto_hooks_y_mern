@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { MainApp } from "./components/09-useContext/MainApp";
+// import { MainApp } from "./components/09-useContext/MainApp";
 
-// import { TodoApp } from "./components/08-useReducer/TodoApp";
+import { TodoApp } from "./components/08-useReducer/TodoApp";
 // import './components/08-useReducer/intro-reducer';
 // import { Padre } from "./components/07-tarea-memo/Padre";
 // import { CallBackHook } from "./components/06-memos/CallBackHook";
@@ -19,4 +19,4 @@ import { MainApp } from "./components/09-useContext/MainApp";
 // import {CounterWithCustomHook} from './components/01-useState/CounterWithCustomHook';
 import "./index.css";
 
-ReactDOM.render(<MainApp />, document.getElementById("root"));
+ReactDOM.render(<TodoApp />, document.getElementById("root"));
