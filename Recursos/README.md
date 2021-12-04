@@ -48,4 +48,5 @@
 
 ## Seccion 12 material para tests de los hooks
 
-npm i @types/jest  // Para instalar el Intellisense para jest
+npm i @types/jest // Para instalar el Intellisense para jest
+[https://github.com/Klerith/react-hooks-en-detalle/releases/tag/v0.12.1] Repositorio con el código de la sección
