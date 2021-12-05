@@ -11,7 +11,7 @@ describe("Pruebas en <AppRouter />>", () => {
 	let wrapper;
 	const fillWrapper = () => {
 		wrapper = mount(
-			<UserContext.Provider value={{user}}>
+			<UserContext.Provider value={{ user }}>
 				<AppRouter />
 			</UserContext.Provider>
 		);

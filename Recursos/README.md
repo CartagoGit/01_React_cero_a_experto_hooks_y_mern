@@ -50,3 +50,7 @@
 
 npm i @types/jest // Para instalar el Intellisense para jest
 [https://github.com/Klerith/react-hooks-en-detalle/releases/tag/v0.12.1] Repositorio con el código de la sección
+
+## Seccion 13 HeroesApp
+
+[https://reactrouter.com/docs/en/v6] Documentacion para el router v6
