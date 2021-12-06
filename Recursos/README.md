@@ -54,3 +54,5 @@ npm i @types/jest // Para instalar el Intellisense para jest
 ## Seccion 13 HeroesApp
 
 [https://reactrouter.com/docs/en/v6] Documentacion para el router v6
+[https://animate.style/] Para añadir animaciones con css
+[https://www.npmjs.com/package/query-string] Para trabajar con query parametros en la barra de direcciones
