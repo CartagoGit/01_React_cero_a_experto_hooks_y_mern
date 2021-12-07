@@ -51,8 +51,12 @@
 npm i @types/jest // Para instalar el Intellisense para jest
 [https://github.com/Klerith/react-hooks-en-detalle/releases/tag/v0.12.1] Repositorio con el código de la sección
 
-## Seccion 13 HeroesApp
+## Seccion 14 HeroesApp
 
 [https://reactrouter.com/docs/en/v6] Documentacion para el router v6
 [https://animate.style/] Para añadir animaciones con css
 [https://www.npmjs.com/package/query-string] Para trabajar con query parametros en la barra de direcciones
+
+## Seccion 15 Rutas y protección de rutas en HeroesApp
+
+[(https://github.com/Klerith/react-heroes-app-rrd-v6/tree/fin-seccion-15-new)] Repositorio de la seccion

@@ -63,7 +63,7 @@ export const SearchScreen = () => {
 							There are not any result with: {q}
 						</div>
 					) : (
-						<div className='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5'>
+						<div className='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 animate__fadeIn animate__slow'>
 							{heroesFiltered.map((hero) => (
 								<HeroCard key={hero.id} {...hero} />
 							))}

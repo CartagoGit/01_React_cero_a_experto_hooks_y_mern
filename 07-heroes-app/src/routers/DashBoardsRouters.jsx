@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { Navbar } from "../components/ui/Navbar";
 import { DcScreen } from "../components/dc/DcScreen";
 import { MarvelScreen } from "../components/marvel/MarvelScreen";
@@ -19,8 +19,9 @@ export const DashBoardsRouters = () => {
 					<Route path='/hero/:id' element={<HeroScreen />} />
 					<Route path='/error' element={<ErrorScreen />} />
 					<Route path='/error/idhero' element={<ErrorScreen message={"There are not heroes with that ID"}/>} />
+					{/* <Route path='/login' element={<ErrorScreen message={"Logout before login"}/>} /> */}
 					<Route path='/' element={<MarvelScreen />} />
-					<Route path='/*' element={<ErrorScreen />} />
+					<Route path='/*' element={<Navigate to='/error' />} />
 				</Routes>
 			</div>
 		</div>
