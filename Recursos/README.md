@@ -59,4 +59,5 @@ npm i @types/jest // Para instalar el Intellisense para jest
 
 ## Seccion 15 Rutas y protección de rutas en HeroesApp
 
-[(https://github.com/Klerith/react-heroes-app-rrd-v6/tree/fin-seccion-15-new)] Repositorio de la seccion
+[https://github.com/Klerith/react-heroes-app-rrd-v6/tree/fin-seccion-15-new] Repositorio de la seccion
+
