@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
-import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
-import { AuthContext } from "../auth/authContext";
+// import React, { useContext } from "react";
+import { Routes, Route, BrowserRouter  } from "react-router-dom"; //,Navigate
+// import { AuthContext } from "../auth/authContext";
 
 import { LoginScreen } from "../components/login/LoginScreen";
 import { DashBoardsRouters } from "./DashBoardsRouters";
@@ -8,7 +8,7 @@ import { PrivateRoutes } from "./PrivateRoutes";
 import { PublicRoutes } from "./PublicRoutes";
 
 export const AppRouter = () => {
-	const { user } = useContext(AuthContext);
+	// const { user } = useContext(AuthContext);
 	return (
 		<BrowserRouter>
 			<Routes>

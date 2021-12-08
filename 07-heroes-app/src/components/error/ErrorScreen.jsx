@@ -1,7 +1,8 @@
 import React from "react";
+import { errorsImages } from "../../helpers/getImages";
 
 export const ErrorScreen = ({message = "This page doesn't exist"}) => {
-	const urlError = "/assets/img/errors/error_enigma.jpg";
+	const urlError = errorsImages("./error_enigma.jpg").default;
 	return (
 		<div className='row justify-content-center text-center animate__fadeIn animate__slowest'>
 			<h1>{message}</h1>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { heroesImages } from "../../helpers/getImages";
 
 export const HeroCard = ({
 	id,
@@ -9,7 +10,8 @@ export const HeroCard = ({
 	first_appearance,
 	characters
 }) => {
-	const imagesPath = `/assets/img/heroes/${id}.jpg`;
+	// const imagesPath = `/assets/img/heroes/${id}.jpg`; Si usar imagenes manejadas por React
+	const imagesPath = heroesImages(`./${id}.jpg`).default;
 	return (
 		<div className='col p-2 animate__fadeIn animate__slowest'>
 			<div className='card h-100 p-2'>

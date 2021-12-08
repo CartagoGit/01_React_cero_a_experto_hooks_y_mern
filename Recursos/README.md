@@ -61,3 +61,6 @@ npm i @types/jest // Para instalar el Intellisense para jest
 
 [https://github.com/Klerith/react-heroes-app-rrd-v6/tree/fin-seccion-15-new] Repositorio de la seccion
 
+## Seccion 17 Manejo de imagenes
+
+[https://webpack.js.org/guides/dependency-management/#requirecontext] Documentacion para el manejo de dependencias con require

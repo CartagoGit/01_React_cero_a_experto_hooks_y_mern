@@ -1,6 +1,8 @@
 import React, { useMemo } from "react";
 import { useParams, Navigate, useNavigate } from "react-router";
+import { heroesImages } from "../../helpers/getImages";
 import { getHeroById } from "../../selectors/getHeroById";
+
 
 export const HeroScreen = () => {
 	const { id: idParam } = useParams(); //Pasados por el router
@@ -14,15 +16,22 @@ export const HeroScreen = () => {
 		navigate(-1);
 	};
 
-	const imagePath = `/assets/img/heroes/${idParam}.jpg`;
+	// const imagePath = `/assets/img/heroes/${idParam}.jpg`;
 	const { id, superhero, publisher, alter_ego, first_appearance, characters } =
 		hero;
-
+	// console.log(heroImages('./marvel-spider.jpg').default);
 	return (
 		<div className='card animate__animated animate__fadeIn animate__slow'>
 			<div className='row justify-content-center mt-3 mb-3'>
 				<div className='col-4'>
-					<img src={imagePath} alt={superhero} className='img-thumbnail animate__animated animate__fadeInLeft animate__faster' />
+					{/* DESDE PUBLIC /ASSETS */}
+					{/* <img src={imagePath} alt={superhero} className='img-thumbnail animate__animated animate__fadeInLeft animate__faster' /> */}
+					{/* MANEJANDO LA IMAGEN CON EL REQUIRE DESDE REACT */}
+					<img
+						src={heroesImages(`./${idParam}.jpg`).default}
+						alt={superhero}
+						className='img-thumbnail animate__animated animate__fadeInLeft animate__faster'
+					/>
 					<small className='d-flex text-center justify-content-center'>
 						id: {id}
 					</small>
@@ -51,7 +60,10 @@ export const HeroScreen = () => {
 							)}
 						</ul>
 						<div className='mt-auto  justify-content-end d-flex'>
-							<button className='btn btn-secondary animate__animated animate__bounce animate__faster' onClick={handleReturn}>
+							<button
+								className='btn btn-secondary animate__animated animate__bounce animate__faster'
+								onClick={handleReturn}
+							>
 								Regresar
 							</button>
 						</div>
