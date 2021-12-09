@@ -64,3 +64,13 @@ npm i @types/jest // Para instalar el Intellisense para jest
 ## Seccion 17 Manejo de imagenes
 
 [https://webpack.js.org/guides/dependency-management/#requirecontext] Documentacion para el manejo de dependencias con require
+
+## Seccion 18 uso de estilos con Sass
+
+### Para añadir las dependencias de Sass para React 17
+
+yarn add sass
+[https://sass-lang.com/documentation] Documentación sass
+[https://gist.github.com/Klerith/76e65f02c8b68e1bd302275b26d3b188] Repositorio con el codigo del boton para la practica
+[https://cdnjs.com/libraries/font-awesome] Pagina de iconos de font-awesome
+[https://github.com/Klerith/react-redux-journal-app/releases/tag/v0.17.0] Codigo de la sección
