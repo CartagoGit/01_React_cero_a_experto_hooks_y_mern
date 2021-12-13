@@ -18,7 +18,7 @@ export const NotesScreen = () => {
 				/>
 				<div className='notes__image'>
 					<img
-						alt='image'
+						alt='uploaded'
 						src='https://media-exp3.licdn.com/dms/image/C511BAQEUGUtdp9I_Lw/company-background_10000/0/1526560332701?e=2159024400&v=beta&t=G3cvNDL4Wwq7TswbpgkqM3km-XCMAsx0-SDSGoEMwSU'
 					/>
 				</div>

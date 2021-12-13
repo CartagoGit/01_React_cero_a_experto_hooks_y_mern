@@ -48,7 +48,7 @@
 
 ## Seccion 12 material para tests de los hooks
 
-npm i @types/jest // Para instalar el Intellisense para jest
+`npm i @types/jest // Para instalar el Intellisense para jest`
 [https://github.com/Klerith/react-hooks-en-detalle/releases/tag/v0.12.1] Repositorio con el código de la sección
 
 ## Seccion 14 HeroesApp
@@ -69,8 +69,33 @@ npm i @types/jest // Para instalar el Intellisense para jest
 
 ### Para añadir las dependencias de Sass para React 17
 
-yarn add sass
+`yarn add sass`
 [https://sass-lang.com/documentation] Documentación sass
 [https://gist.github.com/Klerith/76e65f02c8b68e1bd302275b26d3b188] Repositorio con el codigo del boton para la practica
 [https://cdnjs.com/libraries/font-awesome] Pagina de iconos de font-awesome
 [https://github.com/Klerith/react-redux-journal-app/releases/tag/v0.17.0] Codigo de la sección
+
+## Sección 19 y 20 Redux y Firebase en journal-app
+
+[https://es.redux.js.org/] Documentación de redux
+[https://react-redux.js.org/] Documentación redux para react
+
+`yarn add react-redux redux`
+
+Instalar extension de google para Redux Dev Tools
+[https://github.com/zalmoxisus/redux-devtools-extension#usage] Para ativar el uso de redux en la extension de google
+`window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()`
+[https://gist.github.com/Klerith/e72502aec987bacb5708589396db3d1a] Snipets para redux
+[https://firebase.google.com/] Documentacion de FireBase y FireStore
+`yarn add firebase`
+[https://www.npmjs.com/package/redux-thunk] Documentacion de redux-thunk para crear middleware
+`yarn add redux-thunk`
+[https://www.npmjs.com/package/validator] Documentacion para el validador de formularios
+`yarn add validator`
+
+[https://sweetalert2.github.io/] Mensajes de Alerta Custom
+`yarn add sweetalert2`
+
+[https://github.com/Klerith/react-redux-journal-app/releases/tag/v0.19.0] Código de la sección 19
+
+## Seccion 21 - Crud y subida de archivos en journalapp

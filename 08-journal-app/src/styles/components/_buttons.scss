@@ -6,33 +6,31 @@
 	font-size: 12px;
 	padding: 7px 10px 7px 10px;
 
-	transition: color .3s ease;
+	transition: color 0.3s ease;
 
 	&:focus {
 		outline: none;
 	}
-
-	&:hover{
-		color:darken($color: white, $amount: 20)
+	&:hover {
+		color: darken($color: white, $amount: 20);
 	}
 }
 
 .btn-primary {
 	background-color: $primary;
 	border-radius: 2px;
-	&:disabled {
-		background-color: lighten($color: $primary, $amount: 15);
-	}
 	&:hover {
 		background-color: darken($color: $primary, $amount: 15);
 	}
+	&:disabled {
+		background-color: lighten($color: $primary, $amount: 15);
+		cursor: not-allowed;
+	}
 }
 
-.btn-block{
-    width: 100%;
+.btn-block {
+	width: 100%;
 }
-
-
 
 .google-btn {
 	cursor: pointer;
@@ -68,10 +66,16 @@
 		font-size: 14px;
 		letter-spacing: 0.2px;
 	}
-	&:hover {
-		box-shadow: 0 0 6px $google-blue;
-	}
-	&:active {
-		background: $button-active-blue;
-	}
+	// &:hover {
+	// 	box-shadow: 0 0 6px $google-blue;
+	// }
+
+	// &:active {
+	// 	background: $button-active-blue;
+	// }
+}
+.disabled {
+	opacity: 0.4;
+	pointer-events: none;
+	cursor: not-allowed;
 }
