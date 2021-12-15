@@ -99,3 +99,7 @@ Instalar extension de google para Redux Dev Tools
 [https://github.com/Klerith/react-redux-journal-app/releases/tag/v0.19.0] Código de la sección 19
 
 ## Seccion 21 - Crud y subida de archivos en journalapp
+
+[https://www.youtube.com/playlist?list=PLCKuOXG0bPi29EkcAuVCln9ISbExcQk66] Enlace a la playlist para mas informacion de FireStore
+[https://momentjs.com/] Enlace a la libreria de moment.js para trabajar con fechas
+[https://cloudinary.com/] Servicio para subir imagenes y videos

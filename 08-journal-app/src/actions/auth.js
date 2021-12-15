@@ -8,6 +8,7 @@ import {
 import Swal from "sweetalert2";
 import { firebaseApp, googleProvider } from "../firebase/firebase-config";
 import { types } from "../types/types";
+import { notesLogout } from "./notes";
 import { finishLoading, startLoading } from "./ui";
 
 export const startLoginEmailPassword = (email, password) => {
@@ -69,7 +70,7 @@ export const startGoogleLogin = () => {
 };
 
 export const login = (uid, displayName) => ({
-	type: types.login,
+	type: types.authLogin,
 	payload: {
 		uid,
 		displayName
@@ -81,9 +82,10 @@ export const startLogout = () => {
 		const auth = getAuth(firebaseApp);
 		await auth.signOut();
 		dispatch(logout());
+		dispatch(notesLogout());
 	};
 };
 
 export const logout = () => ({
-	type: types.logout
+	type: types.authLogout
 });

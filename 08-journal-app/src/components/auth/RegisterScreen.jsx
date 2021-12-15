@@ -13,12 +13,11 @@ export const RegisterScreen = () => {
 		loading
 	} = useSelector((state) => state.ui);
 
-	//TODO Se deberia  borrar, simplemente es para no tener que poner los datos cada vez al hacer pruebas
 	const [formValues, handleInputChange] = useForm({
-		name: "Carta",
-		email: "unEmailDePrueba@gmail.com",
-		password: "123456",
-		password2: "123456"
+		// name: "Carta",
+		// email: "unEmailDePrueba@gmail.com",
+		// password: "123456",
+		// password2: "123456"
 	});
 
 	const { name, email, password, password2 } = formValues;
@@ -54,7 +53,7 @@ export const RegisterScreen = () => {
 	return (
 		<>
 			<h3 className='auth__title'>Register</h3>
-			<form onSubmit={handleRegister}>
+			<form onSubmit={handleRegister} className='animate__animated animate__fadeIn animate__faster'>
 				{/* {msgError && <div className='auth__alert-error'>{msgError}</div>} */}
 				<input
 					type='text'
