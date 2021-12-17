@@ -103,3 +103,13 @@ Instalar extension de google para Redux Dev Tools
 [https://www.youtube.com/playlist?list=PLCKuOXG0bPi29EkcAuVCln9ISbExcQk66] Enlace a la playlist para mas informacion de FireStore
 [https://momentjs.com/] Enlace a la libreria de moment.js para trabajar con fechas
 [https://cloudinary.com/] Servicio para subir imagenes y videos
+
+[https://github.com/Klerith/react-redux-journal-app/releases/tag/v0.20.0] Codigo de la seccion 21
+
+## Seccion 23 - Estructura Calendar App
+
+[https://www.npmjs.com/package/react-big-calendar] Enlace dependencia/repositorio para eventos de calendario
+[https://www.npmjs.com/package/react-modal] Enlace Dependencia para modales (Ventanas con informacion)
+[https://www.npmjs.com/package/react-datetime-picker] Enlace dependencia para mostar calendario al seleccionar un item
+
+[https://github.com/Klerith/MERN-Calendar-Front/releases/tag/v1.0.0] Codigo de la seccion 23
