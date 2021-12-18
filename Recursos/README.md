@@ -113,3 +113,41 @@ Instalar extension de google para Redux Dev Tools
 [https://www.npmjs.com/package/react-datetime-picker] Enlace dependencia para mostar calendario al seleccionar un item
 
 [https://github.com/Klerith/MERN-Calendar-Front/releases/tag/v1.0.0] Codigo de la seccion 23
+
+## Sección 24 - Backend para Calendar App - Mongo -Express - Node - Middelware para Express
+
+`npm init -y`
+`yarn init` o con yarn para iniciar el package.json
+
+`npm install -g nodemon` para añadir nodemon globalmente para que haga automaticamente 'node index.js' sin tener que escribirlo cada vez
+`nodemon 'index.js'` para usar nodemon
+
+### Para añadir los scripts y automatizar el nodemon en el package.json
+
+```json
+"scripts": {
+"dev": "nodemon index.js",
+"start": "node index.js"
+},
+```
+
+`npm run dev` Para usar el script añadido en el package.json
+
+`yarn add dotenv` Para poder usar las variavles de entorno en el archivo .env
+
+[https://www.restapitutorial.com/httpstatuscodes.html] Codes de status
+
+`yarn add express-validator` Validaciones en express
+
+[https://www.mongodb.com/es/cloud/atlas/efficiency] enalce a Mongo Atlas
+[https://mongoosejs.com/] Enlace al repositortio de mongoose
+
+`yarn add bcryptjs` Para crear un hash para encriptar la contraseña
+
+[https://jwt.io/] Enlace a Json Web Token - JWT para mantener sesion
+`yarn add jsonwebtoken`
+
+[https://www.npmjs.com/package/cors] Enlace a informacion sobre el CORS
+`yarn add cors`
+
+[https://github.com/Klerith/MERN-Calendar-Backend/releases/tag/v1.0.0] Codigo de la sección
