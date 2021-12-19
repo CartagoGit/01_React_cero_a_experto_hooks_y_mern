@@ -151,3 +151,7 @@ Instalar extension de google para Redux Dev Tools
 `yarn add cors`
 
 [https://github.com/Klerith/MERN-Calendar-Backend/releases/tag/v1.0.0] Codigo de la sección
+
+## Sección 25 - Codigo de la Seccion para hacer el backend de los eventos de las notas del calendar-app
+
+[https://github.com/Klerith/MERN-Calendar-Backend/releases/tag/v2.0.0] Codigo de la seccion
