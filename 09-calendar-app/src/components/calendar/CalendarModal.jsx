@@ -56,12 +56,11 @@ export const CalendarModal = () => {
 	const closeModal = () => {
 		setFormValues(initialFormState);
 		dispatch(uiCloseModal());
-		
 	};
 
 	useEffect(() => {
 		!modalOpen && dispatch(eventSetActive(null));
-	}, [modalOpen]);
+	}, [modalOpen, dispatch]);
 
 	useEffect(() => {
 		setFormValues(activeEvent ? activeEvent : initialFormState);

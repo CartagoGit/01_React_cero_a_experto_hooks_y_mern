@@ -159,3 +159,7 @@ Instalar extension de google para Redux Dev Tools
 ## Sección 26 - Colgar el backend en Heroku para poder usarlo desde cualquier lado
 
 [https://www.heroku.com/] Pagina de heroku
+
+## Seccion 27 - Unir Backend con front del calendarapp
+
+[https://github.com/Klerith/MERN-Calendar-Front/releases/tag/v2.0.0] Codigo de la sección
