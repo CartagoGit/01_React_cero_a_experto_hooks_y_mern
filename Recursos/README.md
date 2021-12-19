@@ -155,3 +155,7 @@ Instalar extension de google para Redux Dev Tools
 ## Sección 25 - Codigo de la Seccion para hacer el backend de los eventos de las notas del calendar-app
 
 [https://github.com/Klerith/MERN-Calendar-Backend/releases/tag/v2.0.0] Codigo de la seccion
+
+## Sección 26 - Colgar el backend en Heroku para poder usarlo desde cualquier lado
+
+[https://www.heroku.com/] Pagina de heroku
