@@ -167,3 +167,20 @@ Instalar extension de google para Redux Dev Tools
 ## Seccion 28 - CRUD de calendarAPP desde el front guardando los datos en el backend
 
 [https://github.com/Klerith/MERN-Calendar-Front/releases/tag/v3.0.0] Código de la sección
+
+## EXTRA
+
+`yarn add @fvilers/disable-react-devtools` Dependencia para deshabilitar dev tool de react en produccion nada mas inicializar el primer componente
+
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+import App from "./App";
+
+if (process.env.NODE_ENV === "production") {
+	disableReactDevTools();
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));
+```
