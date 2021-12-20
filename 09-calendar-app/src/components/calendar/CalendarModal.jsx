@@ -3,15 +3,15 @@ import { useSelector, useDispatch } from "react-redux";
 import moment from "moment";
 import Modal from "react-modal";
 import DateTimePicker from "react-datetime-picker";
-import { v4 } from "uuid";
+// import { v4 } from "uuid";
 
 import "../../styles/modal.css";
 import Swal from "sweetalert2";
 import { uiCloseModal } from "../../actions/ui";
 import {
-	eventAddNew,
+	eventStartAddNew,
 	eventSetActive,
-	eventUpdated
+	eventStartUpdate
 } from "../../actions/events";
 
 const customStyles = {
@@ -117,21 +117,26 @@ export const CalendarModal = () => {
 		// console.log( v4());
 		dispatch(
 			activeEvent
-				? eventUpdated({
-						...formValues,
-						user: {
-							_id: "234",
-							name: "Marta"
-						}
-				  })
-				: eventAddNew({
-						...formValues,
-						id: v4(),
-						user: {
-							_id: "123",
-							name: "Pepe"
-						}
-				  })
+				? eventStartUpdate(formValues
+				// 	{
+				// 		...formValues,
+				// 		user: {
+				// 			_id: "234",
+				// 			name: "Marta"
+				// 		}
+				//   }
+				  )
+				: eventStartAddNew(
+						 formValues 
+						// {
+						// ...formValues,
+						// id: v4(),
+						// user: {
+						// 	_id: "123",
+						// 	name: "Pepe"
+						// }
+						//   }
+				  )
 		);
 		Swal.fire(
 			"Evento guardado",

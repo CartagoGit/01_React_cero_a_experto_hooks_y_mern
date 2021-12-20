@@ -163,3 +163,7 @@ Instalar extension de google para Redux Dev Tools
 ## Seccion 27 - Unir Backend con front del calendarapp
 
 [https://github.com/Klerith/MERN-Calendar-Front/releases/tag/v2.0.0] Codigo de la sección
+
+## Seccion 28 - CRUD de calendarAPP desde el front guardando los datos en el backend
+
+[https://github.com/Klerith/MERN-Calendar-Front/releases/tag/v3.0.0] Código de la sección
