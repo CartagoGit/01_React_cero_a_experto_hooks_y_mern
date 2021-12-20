@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <AppRouter />> Deberia mostrarse correctamente 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand-sm navbar-dark bg-dark"
+  >
+    <a
+      aria-current="page"
+      className="navbar-brand ms-4 active"
+      href="/home"
+      onClick={[Function]}
+    >
+      useContext
+    </a>
+    <div
+      className="collapse navbar-collapse"
+      id="navbarNavAltMarkup"
+    >
+      <div
+        className="navbar-nav"
+      >
+        <a
+          aria-current="page"
+          className="nav-item nav-link {(navData)=>navData.isActive && \\"active\\"} active"
+          href="/home"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+        <a
+          className="nav-item nav-link {(navData)=>navData.isActive && \\"active\\""
+          href="/login"
+          onClick={[Function]}
+        >
+          Login
+        </a>
+        <a
+          className="nav-item nav-link {(navData)=>navData.isActive && \\"active\\""
+          href="/about"
+          onClick={[Function]}
+        >
+          About
+        </a>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="container"
+  >
+    Array [
+      <h1>
+        Home Screen
+      </h1>,
+      <hr />,
+      <pre>
+        {
+   "id": 1,
+   "name": "Mario"
+}
+      </pre>,
+    ]
+  </div>,
+]
+`;

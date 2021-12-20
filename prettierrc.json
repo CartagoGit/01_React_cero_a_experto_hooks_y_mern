@@ -1,0 +1,14 @@
+{
+    "printWidth": 550,
+    "tabWidth": 6,
+    "proseWrap": "preserve",
+    "requirePragma": true,
+    "insertPragma": true,
+    "semi": true,
+    "bracketSpacing": true,
+    "singleQuote": true,
+    "useTabs": true,
+    "arrowParens": "always",
+
+    "trailingComma": "es5"
+}

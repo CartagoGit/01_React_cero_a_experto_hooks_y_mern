@@ -1,0 +1,12 @@
+{
+	"typeAcquisition": {
+		"include": ["jest", "jquery", "**/src/**/*", "jsx"]
+	},
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es6",
+		"jsx": "react",
+		// "checkJs": true
+	},
+	// "exclude": ["node_modules", "**/node_modules/*"]
+}

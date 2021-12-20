@@ -1,4 +1,3 @@
-
 # Curso React: De cero a experto (Hooks y MERN) por Fernando Herrera en Udemy
 
 [https://www.udemy.com/course/react-cero-experto]
@@ -32,12 +31,12 @@ Activitus Bar
 Bracket Pair Colorizer 2 dentro del archivo settings.json global del ordenador
 
 "bracket-pair-colorizer-2.colors": [
-    "#fafafa",
-    "#9F51B6",
-    "#F7C244",
-    "#F07850",
-    "#9CDD29",
-    "#C497D4"
+"#fafafa",
+"#9F51B6",
+"#F7C244",
+"#F07850",
+"#9CDD29",
+"#C497D4"
 ],
 
 ### Tema que usa Fernando Herrera en el curso
@@ -53,3 +52,22 @@ ES7 React/Redux
 Simple React Snippets
 
 Auto Close Tag
+
+## Creación del jsconfig.json para todo el proyecto para tener Intellisense de jest y de javascript e instalacion repositorio para tenerlo tambine de React
+
+npm i @types/react --save-dev
+
+jsconfig.json:
+
+{
+"typeAcquisition": {
+"include": ["jest", "jquery", "**/src/**/*"]
+},
+"compilerOptions": {
+"module": "commonjs",
+"target": "es6"
+},
+"exclude": ["node_modules", "**/node_modules/*"]
+}
+
+## Añadidos Snipets
