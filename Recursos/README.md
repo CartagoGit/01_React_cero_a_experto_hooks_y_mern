@@ -188,8 +188,11 @@ ReactDOM.render(<App />, document.getElementById("root"));
 ### Documentación adicional
 
 [https://react-redux.js.org/introduction/getting-started] Getting Started with React Redux
+
 [https://jestjs.io/docs/getting-started] QuickStart - Jest
+
 [https://firebase.google.com/docs/firestore/?gclid=CjwKCAjw_qb3BRAVEiwAvwq6Vmr_iWcEeIUaQkR59-lfBTnTw5mhiJlb0nS21uwcNUM54NnBLwFhFhoCTG4QAvD_BwE] Introducción a Firestore
+
 [https://blog.logrocket.com/top-10-react-component-libraries-for-2020/] 10 Librerías de React interesantes
 
 [https://es.reactjs.org/tutorial/tutorial.html] Tutorial oficial de React
@@ -197,4 +200,3 @@ ReactDOM.render(<App />, document.getElementById("root"));
 [https://www.youtube.com/watch?v=dNxaP_BTtwQ&list=PLCKuOXG0bPi26-eawizqyLOgM7j66H_4M] React + TypeScript: Crear aplicación de React con Typescript - Fernando Herrera en Youtube
 
 [https://fernando-herrera.com/#/search/react] Página de Fernando Herrera con sus cursos
-````
