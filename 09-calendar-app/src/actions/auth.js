@@ -13,56 +13,80 @@ import { types } from "../types/types";
 
 export const authStartLogin = (email, password) => {
 	return async (dispatch) => {
-		const resp = await fetchNoToken("auth", { email, password }, "POST");
+		try {
+			const resp = await fetchNoToken("auth", { email, password }, "POST");
 
-		const body = await resp.json();
-		if (body.ok) {
-			setStorageToken(body);
-			dispatch(
-				login({
-					uid: body.uid,
-					name: body.name
-				})
+			const body = await resp.json();
+			if (body.ok) {
+				setStorageToken(body);
+				dispatch(
+					login({
+						uid: body.uid,
+						name: body.name
+					})
+				);
+			} else errorHandle(body, dispatch);
+		} catch (error) {
+			Swal.fire(
+				"Error",
+				`Ha habido un problema al cargar la base de datos. Contacte con su administrador:\n ${error}`,
+				"error"
 			);
-		} else errorHandle(body, dispatch);
+		}
 	};
 };
 
 export const authStartRegister = (name, email, password) => {
 	return async (dispatch) => {
-		const resp = await fetchNoToken(
-			"auth/new",
-			{ name, email, password },
-			"POST"
-		);
-		const body = await resp.json();
-
-		if (body.ok) {
-			setStorageToken(body);
-			dispatch(
-				login({
-					uid: body.uid,
-					name: body.name
-				})
+		try {
+			const resp = await fetchNoToken(
+				"auth/new",
+				{ name, email, password },
+				"POST"
 			);
-		} else errorHandle(body, dispatch);
+			const body = await resp.json();
+
+			if (body.ok) {
+				setStorageToken(body);
+				dispatch(
+					login({
+						uid: body.uid,
+						name: body.name
+					})
+				);
+			} else errorHandle(body, dispatch);
+		} catch (error) {
+			Swal.fire(
+				"Error",
+				`Ha habido un problema al cargar la base de datos. Contacte con su administrador:\n ${error}`,
+				"error"
+			);
+		}
 	};
 };
 
 export const authStartChecking = () => {
 	return async (dispatch) => {
-		const resp = await fetchWithToken("auth/renew", {}, "GET");
-		const body = await resp.json();
+		try {
+			const resp = await fetchWithToken("auth/renew", {}, "GET");
+			const body = await resp.json();
 
-		if (body.ok) {
-			setStorageToken(body);
-			dispatch(
-				login({
-					uid: body.uid,
-					name: body.name
-				})
+			if (body.ok) {
+				setStorageToken(body);
+				dispatch(
+					login({
+						uid: body.uid,
+						name: body.name
+					})
+				);
+			} else dispatch(checkingFinish());
+		} catch (error) {
+			Swal.fire(
+				"Error",
+				`Ha habido un problema al cargar la base de datos. Contacte con su administrador:\n ${error}`,
+				"error"
 			);
-		} else dispatch(checkingFinish());
+		}
 	};
 };
 
